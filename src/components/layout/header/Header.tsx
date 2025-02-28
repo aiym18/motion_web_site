@@ -19,7 +19,7 @@ const Header: FC = () => {
           </span>
           <nav>
             <Link href="#">Главная</Link>
-            <Link href="#">О нас</Link>
+            <Link href="/usAbout">О нас</Link>
             <Link href="#">Курсы</Link>
             <Link href="#">Контакты</Link>
           </nav>

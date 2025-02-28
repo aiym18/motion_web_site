@@ -1,0 +1,42 @@
+.AboutUs {
+  padding: 70px 0;
+  .content {
+    display: flex;
+    flex-direction: column;
+    .racket {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      p {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 52px;
+        z-index: 1;
+      }
+    
+      
+      .forracet {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 387;
+        height: 387;
+        top: 168px;
+        border-radius: 50%;
+        left: 800px;
+        background: #96c9e5;
+        margin-left: -90px;
+      }
+    }
+    .forImg{
+        padding: 70px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+        .usimgtwo{
+            margin-top: 280px;
+        }
+    }
+  }
+}
