@@ -13,8 +13,7 @@
         line-height: 52px;
         z-index: 1;
       }
-    
-      
+
       .forracet {
         display: flex;
         align-items: center;
@@ -28,15 +27,308 @@
         margin-left: -90px;
       }
     }
-    .forImg{
+    .forImg {
+      padding: 70px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 60px;
+      .usimgtwo {
+        margin-top: 280px;
+      }
+    }
+    .weBoss {
+      padding: 70px 0;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      h2 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 52px;
+        margin-bottom: 30px;
+      }
+      .fortex {
+        display: flex;
+        gap: 40px;
+        img {
+          width: 459;
+          height: 489;
+        }
+        p {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 750px;
+          font-weight: 200;
+          font-size: 30px;
+          line-height: 35.86px;
+          letter-spacing: 0%;
+        }
+      }
+      p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1250px;
+        font-weight: 200;
+        font-size: 30px;
+        line-height: 35.86px;
+        letter-spacing: 0%;
+      }
+    }
+  }
+}
+@media (max-width: 880px) {
+  .AboutUs {
+    .content {
+      .racket {
+        p {
+          font-weight: 700;
+          font-size: 34px;
+          line-height: 52px;
+          z-index: 1;
+        }
+        .forracet {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 307;
+          height: 307;
+          top: 168px;
+          border-radius: 50%;
+          left: 800px;
+          background: #96c9e5;
+          margin-left: -90px;
+          img {
+            width: 350px;
+            height: 350px;
+          }
+        }
+      }
+      .forImg {
         padding: 70px 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 60px;
-        .usimgtwo{
-            margin-top: 280px;
+        gap: 30px;
+        img {
+          width: 200px;
+          height: 300px;
         }
+        .usimgtwo {
+          margin-top: 280px;
+        }
+      }
+      .weBoss {
+        padding: 60px 0;
+
+        .fortex {
+          display: flex;
+          gap: 40px;
+          img {
+            width: 359;
+            height: 389;
+          }
+          p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 450px;
+            font-weight: 200;
+            font-size: 18px;
+            line-height: 32.86px;
+            letter-spacing: 0%;
+          }
+        }
+        p {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 820px;
+          font-weight: 200;
+          font-size: 18px;
+          line-height: 35.86px;
+          letter-spacing: 0%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .AboutUs {
+    .content {
+      .racket {
+        p {
+          font-size: 32px;
+        }
+      }
+      .forImg {
+        padding: 30px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        img {
+          width: 200px;
+          height: 300px;
+        }
+        .usimgtwo {
+          margin-top: 180px;
+        }
+      }
+      .weBoss {
+        padding: 30px 0;
+        .fortex {
+          display: flex;
+          gap: 20px;
+          img {
+            width: 279;
+            height: 279;
+          }
+          p {
+            width: 250px;
+            font-weight: 200;
+            font-size: 12px;
+            line-height: 18.86px;
+            letter-spacing: 0%;
+          }
+        }
+        p {
+          font-weight: 200;
+          font-size: 12px;
+          line-height: 18.86px;
+          width: 600px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 550px) {
+  .AboutUs {
+    .content {
+      .racket {
+        p {
+          font-size: 23px;
+          line-height: 28.86px;
+        }
+        .forracet {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 250;
+          height: 250;
+          top: 168px;
+          border-radius: 50%;
+          background: #96c9e5;
+          margin-left: -90px;
+          img {
+            width: 250px;
+            height: 250px;
+          }
+        }
+      }
+
+      .weBoss {
+        padding: 20px 0;
+        h2 {
+          font-size: 29px;
+        }
+        .fortex {
+          display: flex;
+          gap: 10px;
+          img {
+            width: 179;
+            height: 199;
+          }
+          p {
+            width: 250px;
+            font-weight: 200;
+            font-size: 12px;
+            line-height: 12.86px;
+          }
+        }
+        p {
+          font-weight: 200;
+          font-size: 12px;
+          line-height: 12.86px;
+          width: 450px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  .AboutUs {
+    .content {
+      .racket {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 10px;
+        p {
+          font-size: 20px;
+          text-align: center;
+        }
+        .forracet {
+          display: flex;
+          align-items: center;
+          width: 250;
+          height: 250;
+          border-radius: 50%;
+          background: #96c9e5;
+          margin-left: 0px;
+          img {
+            width: 250px;
+            height: 250px;
+          }
+        }
+      }
+      .forImg {
+        padding: 40px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        img {
+          width: 140px;
+          height: 190px;
+        }
+        .usimgtwo {
+          margin-top: 0px;
+        }
+      }
+      .weBoss {
+        padding: 20px 0;
+        h2 {
+          font-size: 29px;
+        }
+        .fortex {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+          img {
+            width: 179;
+            height: 199;
+          }
+          p {
+            width: 300px;
+            font-weight: 200;
+            font-size: 12px;
+            line-height: 14.86px;
+          }
+        }
+        p {
+          font-weight: 200;
+          font-size: 12px;
+          line-height: 14.86px;
+          width: 300px;
+        }
+      }
     }
   }
 }

@@ -22,9 +22,9 @@ const Header: FC = () => {
             <IoIosMenu />
           </span>
           <nav>
-            <Link href="#">Главная</Link>
+            <Link href="/">Главная</Link>
             <Link href="/usAbout">О нас</Link>
-            <Link href="#">Курсы</Link>
+            <Link href="/courses">Курсы</Link>
             <Link href="#">Контакты</Link>
           </nav>
           <div className={s.header_btns}>
