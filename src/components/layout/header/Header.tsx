@@ -7,14 +7,18 @@ import { IoIosMenu } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
 
 const Header: FC = () => {
-  const [openModal, setOpenModal] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
 
   return (
     <header id={s.header}>
       <div className="container">
         <div className={s.header}>
           <h1>Logo</h1>
-          <span className={s.burger_menu} onClick={() => setOpenModal(true)}>
+          <span className={s.burger_menu} onClick={toggleMobileMenu}>
             <IoIosMenu />
           </span>
           <nav>
@@ -30,25 +34,23 @@ const Header: FC = () => {
             </button>
           </div>
         </div>
-        {openModal && (
-          <div className={`${s.header_mobile} ${openModal ? s.active : ""}`}>
-            <span className={s.burger_menu} onClick={() => setOpenModal(false)}>
-              <IoClose />
-            </span>
-            <nav>
-              <Link href="#">Главная</Link>
-              <Link href="#">О нас</Link>
-              <Link href="#">Курсы</Link>
-              <Link href="#">Контакты</Link>
-            </nav>
-            <div className={s.header_btns}>
-              <Link href={"#"}>Войти</Link>
-              <button>
-                Присоединяйся <FaArrowRight />
-              </button>
-            </div>
+        <div className={`${s.header_mobile} ${isMobileMenuOpen ? s.open : ""}`}>
+          <span className={s.burger_menu} onClick={toggleMobileMenu}>
+            <IoClose />
+          </span>
+          <nav>
+            <Link href="#">Главная</Link>
+            <Link href="#">О нас</Link>
+            <Link href="#">Курсы</Link>
+            <Link href="#">Контакты</Link>
+          </nav>
+          <div className={s.header_btns}>
+            <Link href={"#"}>Войти</Link>
+            <button>
+              Присоединяйся <FaArrowRight />
+            </button>
           </div>
-        )}
+        </div>
       </div>
     </header>
   );
