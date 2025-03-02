@@ -4,6 +4,7 @@ import AboutCard from "./about/AboutCard";
 import Why from "./why/Why";
 import ExtraCourses from "./extra_courses/ExtraCourses";
 import Comments from "./comments/Comments";
+import JoinUs from "./join_us/JoinUs";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Why />
       <ExtraCourses />
       <Comments />
+      <JoinUs />
     </div>
   );
 };
