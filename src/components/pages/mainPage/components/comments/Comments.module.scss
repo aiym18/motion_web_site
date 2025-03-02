@@ -1,0 +1,182 @@
+#comments {
+  padding: 100px 0;
+  .comments {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    h1 {
+      font-weight: 500;
+      color: #0b132a;
+      width: 40%;
+      font-size: 35px;
+      line-height: 50px;
+    }
+    p {
+      width: 40%;
+      padding: 20px 0 60px 0;
+      font-weight: 400;
+      color: #4f5665;
+      font-size: 16px;
+      line-height: 30px;
+    }
+    .swiper {
+      width: 100%;
+      .cards {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .conductor {
+      display: flex;
+      justify-content: space-between;
+      margin: 50px 0 0 0;
+      .count {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        span {
+          width: 15px;
+          height: 15px;
+          background: #dde0e4;
+          border-radius: 50%;
+          transition: 0.3s;
+        }
+        span:hover {
+          width: 45px;
+          background-color: #23a6f0;
+          border-radius: 12px;
+        }
+      }
+      .arrows {
+        display: flex;
+        gap: 20px;
+        .circle {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          border: 2px solid #23a6f0;
+          color: #23a6f0;
+          font-size: 20px;
+          transition: 0.2s;
+        }
+        .circle:hover {
+          background: #23a6f0;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1140px) {
+  #comments {
+    padding: 50px 0;
+    .comments {
+      h1 {
+        width: 45%;
+      }
+      p {
+        width: 60%;
+      }
+    }
+  }
+}
+
+@media (max-width: 940px) {
+  #comments {
+    padding: 40px 0;
+    .comments {
+      h1 {
+        width: 60%;
+        font-size: 30px;
+      }
+      p {
+        width: 70%;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 790px) {
+  #comments {
+    padding: 40px 0;
+    .comments {
+      h1 {
+        width: 60%;
+        font-size: 27px;
+        line-height: 30px;
+      }
+      p {
+        width: 70%;
+        font-size: 14px;
+        line-height: 19px;
+        padding: 12px 0 30px 0;
+      }
+      .swiper {
+        .cards {
+          gap: 10px;
+        }
+        .conductor {
+          margin: 30px 0 0 0;
+          .count {
+            gap: 6px;
+            span {
+              width: 13px;
+              height: 13px;
+            }
+            span:hover {
+              width: 30px;
+            }
+          }
+          .arrows {
+            .circle {
+              width: 40px;
+              height: 40px;
+              font-size: 17px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  #comments {
+    .comments {
+      h1 {
+        font-size: 22px;
+        width: 80%;
+        line-height: 20px;
+      }
+      p {
+        width: 90%;
+        font-size: 12px;
+        line-height: 15px;
+      }
+      .swiper {
+        .conductor {
+          margin: 10px 0 0 0;
+          .count {
+            span {
+              width: 8px;
+              height: 8px;
+            }
+          }
+          .arrows {
+            .circle {
+              width: 20px;
+              height: 20px;
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
