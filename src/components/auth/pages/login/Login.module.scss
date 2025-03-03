@@ -1,0 +1,239 @@
+#login {
+  background-image: url(../../../../assets//img//login-bg.png);
+  height: 100vh;
+  background-repeat: repeat-y;
+  background-position: left center;
+  background-size: 44% 100%;
+  .login {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .login_text {
+      width: 50%;
+      position: relative;
+      .close {
+        position: absolute;
+        right: 0;
+        top: -60px;
+        svg {
+          font-size: 60px;
+        }
+      }
+      h1 {
+        font-weight: 700;
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 48px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+
+        input {
+          background: none;
+          font-weight: 400;
+          font-size: 24.45px;
+          padding-bottom: 12px;
+          border: none;
+          outline: none;
+          margin-top: 30px;
+          border-bottom: 1.53px solid #000000a6;
+          &::placeholder {
+            color: #0000008f;
+          }
+        }
+        a {
+          font-weight: 400;
+          margin-left: auto;
+          font-size: 20px;
+          margin-top: 15px;
+          margin-bottom: 50px;
+          color: #0000008f;
+          font-family: "Montserrat", serif;
+        }
+        .btn {
+          padding: 12px 0;
+          background: #23a6f0;
+          color: white;
+          border-radius: 12px;
+          font-weight: 500;
+          font-size: 24px;
+        }
+        .regis {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 50px;
+          p {
+            font-weight: 500;
+            font-size: 20px;
+            a {
+              color: #23a6f0;
+              font-weight: 500;
+              font-size: 20px;
+            }
+          }
+          .or {
+            display: flex;
+            align-items: center;
+            margin: 40px 0 30px 0;
+            gap: 30px;
+            hr {
+              width: 139px;
+              border: 1px solid #23a6f0;
+            }
+            span {
+              font-weight: 500;
+              color: #00000080;
+              font-size: 20px;
+            }
+          }
+          .reg_btn {
+            display: flex;
+            gap: 30px;
+            button {
+              padding: 16px 30px;
+              font-family: Montserrat;
+              border: 1px solid #348bca;
+              background: none;
+              border-radius: 7px;
+              font-weight: 500;
+              font-size: 24px;
+              display: flex;
+              align-items: center;
+              gap: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  #login {
+    .login {
+      .login_text {
+        h1 {
+          font-size: 38px;
+          margin-bottom: 20px;
+        }
+        .close {
+          top: -40px;
+          svg {
+            font-size: 30px;
+          }
+        }
+        form {
+          input {
+            font-size: 18px;
+          }
+          a {
+            font-size: 16px;
+            margin-bottom: 20px;
+          }
+          .btn {
+            font-size: 18px;
+          }
+          .regis {
+            p {
+              font-size: 16px;
+              a {
+                font-size: 15px;
+              }
+            }
+            .or {
+              margin: 20px 0 30px 0;
+              gap: 15px;
+              hr {
+                width: 100px;
+              }
+              span {
+                font-size: 15px;
+              }
+            }
+            .reg_btn {
+              gap: 15px;
+              button {
+                padding: 12px 25px;
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  #login {
+    .login {
+      .login_text {
+        width: 55%;
+        h1 {
+          font-size: 28px;
+          margin-bottom: 0px;
+        }
+        form {
+          input {
+            font-size: 14px;
+          }
+          a {
+            font-size: 12px;
+            margin-bottom: 14px;
+            margin-top: 6px;
+          }
+          .btn {
+            font-size: 14px;
+            padding: 10px 0;
+          }
+          .regis {
+            margin-top: 20px;
+            p {
+              font-size: 12px;
+              a {
+                font-size: 11px;
+              }
+            }
+            .or {
+              margin: 20px 0 30px 0;
+              gap: 15px;
+              hr {
+                width: 60px;
+              }
+              span {
+                font-size: 13px;
+              }
+            }
+            .reg_btn {
+              button {
+                padding: 12px 25px;
+                font-size: 11px;
+                img {
+                  width: 15px;
+                  height: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  #login {
+    background-image: none;
+    .login {
+      display: flex;
+      justify-content: center;
+      .login_text {
+        width: 90%;
+      }
+    }
+  }
+}
