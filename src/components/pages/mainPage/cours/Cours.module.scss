@@ -1,120 +1,238 @@
-
 .Cours {
-    padding: 50px 0;
-    .content {
+  padding: 50px 0;
+  .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .main {
       display: flex;
+      gap: 40px;
       align-items: center;
-      flex-direction: column;
-      .main {
+      .tex {
         display: flex;
-        gap: 40px;
-        align-items: center;
-        .tex {
-          display: flex;
-          flex-direction: column;
-          gap: 40px;
-          h3 {
-            font-family: Rubik;
-            font-weight: 700;
-            font-size: 50px;
-            line-height: 70px;
-            letter-spacing: 0%;
-          }
-          button {
-            width: 331;
-            height: 59;
-            top: 477px;
-            left: 150px;
-            gap: 10px;
-            border-radius: 10px;
-            padding-top: 17px;
-            padding-right: 96px;
-            padding-bottom: 17px;
-            padding-left: 96px;
-            background: #23a6f0;
-            color: white;
-            box-shadow: 0px 4px 29px 0px #23a6f0b2;
-          }
-        }
-        img {
-          display: flex;
-        }
-      }
-      .popular {
-        padding: 70px 0;
-        display: flex;
-        align-items: center;
         flex-direction: column;
-        h1 {
+        gap: 40px;
+        h3 {
           font-family: Rubik;
           font-weight: 700;
           font-size: 50px;
           line-height: 70px;
           letter-spacing: 0%;
         }
-        p {
-          font-family: Rubik;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 30px;
-          letter-spacing: 0%;
-          text-align: center;
-          margin: 20px 0;
-          color: #4f5665;
-        }
-        .forbutton {
-          display: flex;
-          align-items: center;
-          gap: 50px;
-          button {
-            gap: 10.88px;
-            border-radius: 5.44px;
-            padding-top: 10.88px;
-            padding-right: 21.76px;
-            padding-bottom: 10.88px;
-            padding-left: 21.76px;
-            border-width: 1.09px;
-            font-family: Rubik;
-            font-weight: 400;
-            font-size: 13.06px;
-            line-height: 15.47px;
-            letter-spacing: 0%;
-            background: transparent;
-            border: 2px solid rgba(128, 128, 128, 0.442);
-            color: #818c96;
-          }
-          button:hover {
-            gap: 10.88px;
-            border-radius: 5.44px;
-            padding-top: 10.88px;
-            padding-right: 21.76px;
-            padding-bottom: 10.88px;
-            padding-left: 21.76px;
-            border-width: 1.09px;
-            font-family: Rubik;
-            font-weight: 400;
-            font-size: 13.06px;
-            line-height: 15.47px;
-            letter-spacing: 0%;
-            background: #23a6f0;
-            border: none;
-            color: white;
-          }
+        button {
+          width: 331;
+          height: 59;
+          gap: 10px;
+          border-radius: 10px;
+          background: #23a6f0;
+          color: white;
+          box-shadow: 0px 4px 29px 0px #23a6f0b2;
         }
       }
-      .forcard {
+      img {
+        display: flex;
+      }
+    }
+    .popular {
+      padding: 70px 0;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      h1 {
+        font-family: Rubik;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 70px;
+        letter-spacing: 0%;
+      }
+      p {
+        font-family: Rubik;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0%;
+        text-align: center;
+        margin: 20px 0;
+        color: #4f5665;
+      }
+      .forbutton {
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        flex-wrap: wrap;
         gap: 50px;
-        h2 {
+        button {
+          gap: 10.88px;
+          border-radius: 5.44px;
+          padding-top: 10.88px;
+          padding-right: 21.76px;
+          padding-bottom: 10.88px;
+          padding-left: 21.76px;
+          border-width: 1.09px;
+          font-family: Rubik;
           font-weight: 400;
-          font-size: 20px;
-          line-height: 23.7px;
-          text-decoration: underline;
+          font-size: 13.06px;
+          line-height: 15.47px;
+          letter-spacing: 0%;
+          background: transparent;
+          border: 2px solid rgba(128, 128, 128, 0.442);
+          color: #818c96;
+        }
+        button:hover {
+          gap: 10.88px;
+          border-radius: 5.44px;
+          padding-top: 10.88px;
+          padding-right: 21.76px;
+          padding-bottom: 10.88px;
+          padding-left: 21.76px;
+          border-width: 1.09px;
+          font-family: Rubik;
+          font-weight: 400;
+          font-size: 13.06px;
+          line-height: 15.47px;
+          letter-spacing: 0%;
+          background: #23a6f0;
+          border: none;
+          color: white;
+        }
+      }
+    }
+    .forcard {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 50px;
+      h2 {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23.7px;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  .Cours {
+    .content {
+      .main {
+        .tex {
+          h3 {
+            font-size: 40px;
+            line-height: 72.7px;
+          }
         }
       }
     }
   }
-  
+}
+@media (max-width: 750px) {
+  .Cours {
+    .content {
+      .main {
+        .tex {
+          h3 {
+            font-size: 27px;
+            line-height: 42.7px;
+          }
+          button {
+            width: 231;
+            height: 59;
+          }
+        }
+        img {
+          width: 300px;
+        }
+      }
+      .popular {
+        h1 {
+          font-size: 34px;
+        }
+        .forbutton {
+          gap: 20px;
+          button {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 550px) {
+  .Cours {
+    .content {
+      .main {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+        .tex {
+          h3 {
+            font-size: 25px;
+            line-height: 39.7px;
+          }
+        }
+        img{
+          width: 300px;
+          height: 400px;
+        }
+      }
+      .popular {
+        h1 {
+          font-size: 34px;
+        }
+        .forbutton {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          button {
+            width: 200px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 550px) {
+  .Cours {
+    .content {
+      .main {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+        .tex {
+          h3 {
+            font-size: 20px;
+            line-height: 36.7px;
+          }
+        }
+        img{
+          width: 240px;
+          height: 300px;
+        }
+      }
+      .popular {
+        h1 {
+          font-size: 25px;
+        }
+        p{
+          font-size: 13px;
+        }
+        .forbutton {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          button {
+            width: 200px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
