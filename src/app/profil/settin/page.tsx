@@ -1,5 +1,5 @@
 import React from 'react';
-import Setting from '../../mainProfile/settin/Setting';
+import Setting from '../../../components/pages/mainProfile/settin/Setting';
 
 const page = () => {
     return (
