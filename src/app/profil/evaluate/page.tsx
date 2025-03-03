@@ -1,10 +1,10 @@
-import Cours from "@/components/pages/mainPage/cours/Cours";
+import Evaluate from "@/components/pages/mainProfile/evaluate/Evaluate";
 import React from "react";
 
 const page = () => {
   return (
     <div>
-      <Cours/>
+      <Evaluate />
     </div>
   );
 };

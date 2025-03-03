@@ -1,0 +1,14 @@
+.ProfLoyoutSite {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ 
+  .all {
+    display: flex;
+    max-width: 100%;
+  }
+  main {
+    overflow-y: scroll;
+    height: 800px;
+  }
+}
