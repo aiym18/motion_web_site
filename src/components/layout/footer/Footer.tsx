@@ -1,7 +1,11 @@
 import { FC } from "react";
 import scss from "./Footer.module.scss";
+import { usePathname } from "next/navigation";
 
 const Footer: FC = () => {
+  const pathname = usePathname();
+
+  if (pathname.startsWith("/auth")) return null;
   return (
     <section className={scss.Footer}>
       <div className="container">
