@@ -1,0 +1,32 @@
+.NavProfile {
+  padding: 30px 0;
+  border-right: 2px solid #000;
+  width: 300px;
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 180px;
+    .nav,
+    .help {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      span {
+        display: flex;
+        gap: 20px;
+        font-size: 25px;
+        color: #00000083;
+        a {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: #00000097;
+        }
+        a:hover {
+          color: #499BFC;
+        }
+      }
+    }
+    
+  }
+}
