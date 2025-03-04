@@ -23,7 +23,7 @@ const Login = () => {
               <div className={s.regis}>
                 <p>
                   У вас нет аккаунта?
-                  <Link href={"/auth/register"}>Зарегистрироваться</Link>{" "}
+                  <Link href={"/auth/register"}> Зарегистрироваться</Link>
                 </p>
                 <div className={s.or}>
                   <hr />

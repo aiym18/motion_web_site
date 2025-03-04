@@ -6,6 +6,7 @@ const Footer: FC = () => {
   const pathname = usePathname();
 
   if (pathname.startsWith("/auth")) return null;
+  if (pathname.startsWith("/profil")) return null;
   return (
     <section className={scss.Footer}>
       <div className="container">

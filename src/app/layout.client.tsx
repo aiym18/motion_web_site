@@ -8,9 +8,7 @@ interface LayoutClientProps {
 const LayoutClient: FC<LayoutClientProps> = ({ children }) => {
   return (
     <>
-      <LayotSite>
-        {children}
-      </LayotSite>
+      <LayotSite>{children}</LayotSite>
     </>
   );
 };

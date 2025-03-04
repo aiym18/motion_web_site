@@ -17,7 +17,7 @@ const NavProfile: FC = () => {
           <div className={scss.nav}>
             <span>
               <HiUser />
-              <Link href="/profil">Профиль</Link>
+              <Link href="/profil/">Профиль</Link>
             </span>
             <span>
               <IoChatboxEllipses />
