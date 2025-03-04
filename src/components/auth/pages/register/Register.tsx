@@ -12,7 +12,7 @@ const Register = () => {
       <div id={s.register_head}>
         <div className="container">
           <div className={s.register_head}>
-            <Link href={"/auth/login"}>Войти</Link>
+            <Link href={"/auth"}>Войти</Link>
           </div>
         </div>
       </div>

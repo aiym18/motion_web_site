@@ -1,6 +1,6 @@
 "use client";
 import { FC, useState } from "react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import s from "./Header.module.scss";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
@@ -11,6 +11,7 @@ import { useAuth } from "@/helpers/hooks/useAuth";
 const Header: FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { login } = useAuth();
+  const router = useRouter();
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
@@ -18,6 +19,7 @@ const Header: FC = () => {
   const pathname = usePathname();
 
   if (pathname.startsWith("/auth")) return null;
+  if (pathname.startsWith("/profil")) return null;
 
   return (
     <header id={s.header}>
@@ -35,7 +37,12 @@ const Header: FC = () => {
           </nav>
           <div className={s.header_btns}>
             <Link href={"/auth"}>Войти</Link>
-            <button onClick={login}>
+            <button
+              onClick={() => {
+                login;
+                router.push("/profil");
+              }}
+            >
               Присоединяйся <FaArrowRight />
             </button>
           </div>
@@ -52,9 +59,11 @@ const Header: FC = () => {
           </nav>
           <div className={s.header_btns}>
             <Link href={"/auth/login"}>Войти</Link>
-            <button>
-              Присоединяйся <FaArrowRight />
-            </button>
+            <Link href={"/profil"}>
+              <button>
+                Присоединяйся <FaArrowRight />
+              </button>
+            </Link>
           </div>
         </div>
       </div>

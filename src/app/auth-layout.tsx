@@ -3,6 +3,7 @@
 import { useAuth } from "@/helpers/hooks/useAuth";
 import LayoutClient from "./layout.client";
 import LayoutLogin from "./auth/layout";
+import LayoutPrifile from "./profil/layout";
 
 export default function AuthLayout({
   children,
@@ -13,7 +14,7 @@ export default function AuthLayout({
 
   let LayoutComponent = LayoutClient;
   if (isLoggingIn) LayoutComponent = LayoutLogin;
-  //   if (user) LayoutComponent = LayoutProfile;
+  if (user) LayoutComponent = LayoutPrifile;
 
   return <LayoutComponent>{children}</LayoutComponent>;
 }
