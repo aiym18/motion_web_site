@@ -29,12 +29,12 @@ const NavProfile: FC = () => {
             </span>
             <span>
               <FaStar />
-              <a href="/profil/evaluate">Оценить</a>
+              <Link href="/profil/evaluate">Оценить</Link>
             </span>
             <span>
               <IoSettingsSharp />
 
-              <a href="profil/settin">Настройки</a>
+              <Link href="/profil/settin">Настройки</Link>
             </span>
           </div>
           <div className={scss.help}>
@@ -44,7 +44,7 @@ const NavProfile: FC = () => {
             </span>
             <span>
               <CiLogout />
-              <a href="#">Выйти</a>
+              <Link href="/">Выйти</Link>
             </span>
           </div>
         </div>
