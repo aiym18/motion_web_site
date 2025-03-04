@@ -1,0 +1,39 @@
+.Marketing {
+  .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    h1 {
+      font-weight: 700;
+      font-size: 50px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 30px;
+    }
+    .forMarket {
+      display: flex;
+      gap: 80px;
+      .tex {
+        width: 650px;
+        h2 {
+          font-weight: 700;
+          font-size: 36px;
+        }
+        p {
+          color: #00000083;
+          span {
+            color: #000000;
+            font-weight: 600;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    p {
+      color: #00000083;
+    }
+  }
+}

@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import s from "./Card.module.scss";
 import img from "@/assets/img/card-img.png";
@@ -6,8 +7,10 @@ import { IoIosArrowForward, IoMdHeartEmpty } from "react-icons/io";
 import { MdOutlineAccessAlarm } from "react-icons/md";
 import { LuChartNoAxesCombined } from "react-icons/lu";
 import { GiProgression } from "react-icons/gi";
+import { useRouter } from "next/navigation";
 
 const Card = () => {
+  const router = useRouter();
   return (
     <div id={s.card}>
       <div className={s.card_img}>
@@ -37,7 +40,7 @@ const Card = () => {
             <h6>Прогресс</h6>
           </div>
         </div>
-        <button>
+        <button onClick={() => router.push("/marketing")}>
           Узнать больше <IoIosArrowForward />
         </button>
       </div>
