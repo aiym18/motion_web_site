@@ -2,6 +2,7 @@ import { FC } from "react";
 import scss from "./Marketing.module.scss";
 import market from "@/assets/img/market.png";
 import Image from "next/image";
+import JoinUs from "../components/join_us/JoinUs";
 const Marketing: FC = () => {
   return (
     <section className={scss.Marketing}>
@@ -50,6 +51,7 @@ const Marketing: FC = () => {
             рекомендации касаются личного бюджета. Ниже мы рассмотрим основные
             финансовые рискив бизнесе и стратегии управления ими.
           </p>
+          <JoinUs/>
         </div>
       </div>
     </section>
