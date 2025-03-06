@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import s from "./Login.module.scss";
 import Link from "next/link";
@@ -5,7 +6,10 @@ import Image from "next/image";
 import google from "@/assets/img/google.svg";
 import facebook from "@/assets/img/facebook.svg";
 import { IoClose } from "react-icons/io5";
+import { useRouter } from "next/navigation";
 const Login = () => {
+  const router = useRouter();
+
   return (
     <div id={s.login}>
       <div className="container">
@@ -18,7 +22,7 @@ const Login = () => {
             <form>
               <input type="email" placeholder="Почта" />
               <input type="password" placeholder="Пароль" />
-              <Link href={"/"}>Забыли пароль?</Link>
+              <Link href={"/auth/payment"}>Забыли пароль?</Link>
               <button className={s.btn}>Войти</button>
               <div className={s.regis}>
                 <p>
