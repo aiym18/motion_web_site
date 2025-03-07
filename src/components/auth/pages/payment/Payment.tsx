@@ -98,7 +98,7 @@ const Payment = () => {
                 </p>
                 <input type="text" />
               </label>
-              <button>Назад</button>
+              <button className={s.back}>Назад</button>
             </div>
             <div className={`${s.right} ${s.input}`}>
               <label>

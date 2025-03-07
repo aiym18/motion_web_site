@@ -100,7 +100,7 @@
       padding: 50px 0 0 0;
       width: 100%;
       .input {
-        width: 45%;
+        width: 47%;
         display: flex;
         flex-direction: column;
         gap: 40px;
@@ -150,6 +150,185 @@
           color: white;
           border: none;
           border-radius: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1130px) {
+  #payment {
+    padding: 30px 0;
+    .title {
+      font-size: 28.95px;
+    }
+    #card_payment {
+      padding: 10px 0;
+      margin: 30px 0;
+      .card_payment {
+        h1 {
+          font-size: 28.95px;
+        }
+        .cards {
+          img {
+            width: 60px;
+            height: 45px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 900px) {
+  #payment {
+    .title {
+      font-size: 22px;
+    }
+    #card_payment {
+      .card_payment {
+        h1 {
+          font-size: 20px;
+        }
+      }
+    }
+    .payment_way {
+      h2 {
+        font-size: 20px;
+      }
+      .customSelect {
+        .selectedOption {
+          font-size: 17px;
+          img {
+            width: 70px;
+            height: 48px;
+          }
+        }
+        .open_optionsList {
+          li {
+            font-size: 17px;
+          }
+        }
+      }
+      .inputs {
+        .input {
+          label {
+            p {
+              font-size: 14px;
+            }
+            input {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 700px) {
+  #payment {
+    .title {
+      font-size: 18px;
+    }
+    #card_payment {
+      .card_payment {
+        h1 {
+          font-size: 16px;
+        }
+        .cards {
+          img {
+            width: 40px;
+            height: 30px;
+          }
+        }
+      }
+    }
+    .payment_way {
+      h2 {
+        font-size: 17px;
+      }
+      .customSelect {
+        .selectedOption {
+          gap: 15px;
+          font-size: 15px;
+          img {
+            width: 40px;
+            height: 30px;
+          }
+          .open {
+            top: 10px;
+          }
+        }
+        .open_optionsList {
+          li {
+            font-size: 15px;
+          }
+        }
+      }
+      .inputs {
+        flex-direction: column;
+        position: relative;
+        gap: 20px;
+        .input {
+          width: 100%;
+          gap: 20px;
+          label {
+            p {
+              font-size: 14px;
+            }
+            input {
+              font-size: 16px;
+              padding: 12px 20px;
+            }
+          }
+          .back {
+            position: absolute;
+            bottom: 0;
+          }
+          button {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 580px) {
+  #payment {
+    #card_payment {
+      background: #c9e7fd;
+      padding: 10px 0;
+      margin: 30px 0;
+      .card_payment {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+      }
+    }
+  }
+}
+@media (max-width: 420px) {
+  #payment {
+    #card_payment {
+      margin: 16px 0;
+      .card_payment {
+        gap: 10px;
+        h1 {
+          font-size: 14px;
+        }
+      }
+    }
+    .payment_way {
+      h2 {
+        font-size: 15px;
+      }
+      .inputs {
+        margin-top: 20px;
+        padding: 0;
+        .input {
+          button {
+            padding: 10px 26px;
+            border-radius: 6px;
+          }
         }
       }
     }
