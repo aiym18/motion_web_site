@@ -73,6 +73,7 @@
         position: absolute;
         top: 100%;
         left: 0;
+        z-index: 999;
         width: 100%;
         background: white;
         border: 1px solid #ccc;
@@ -317,9 +318,16 @@
         }
       }
     }
+
     .payment_way {
       h2 {
         font-size: 15px;
+      }
+      .customSelect {
+        .selectedOption {
+          gap: 5px;
+          font-size: 13px;
+        }
       }
       .inputs {
         margin-top: 20px;
@@ -328,6 +336,24 @@
           button {
             padding: 10px 26px;
             border-radius: 6px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 380px) {
+  #payment {
+    .payment_way {
+      .customSelect {
+        .selectedOption {
+          img {
+            display: none;
+          }
+          .open {
+            top: 9px;
+            right: 8px;
+            font-size: 20px;
           }
         }
       }
