@@ -4,8 +4,8 @@ import scss from "./Cours.module.scss";
 import Image from "next/image";
 import cours from "@/assets/img/coursimg.png";
 import Card from "@/ui/card/Card";
-import Comments from "../components/comments/Comments";
-import JoinUs from "../components/join_us/JoinUs";
+import Comments from "../mainPage/components/comments/Comments";
+import JoinUs from "../mainPage/components/join_us/JoinUs";
 
 const Cours: FC = () => {
   return (
@@ -45,9 +45,9 @@ const Cours: FC = () => {
             <Card />
             <h2>Смотреть больше</h2>
           </div>
-          <Comments />
-          <JoinUs />
         </div>
+        <Comments />
+        <JoinUs />
       </div>
     </section>
   );

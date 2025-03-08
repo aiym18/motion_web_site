@@ -3,7 +3,7 @@ import { FC, useState } from "react";
 import scss from "./Marketing.module.scss";
 import market from "@/assets/img/market.png";
 import Image from "next/image";
-import JoinUs from "../components/join_us/JoinUs";
+import JoinUs from "../mainPage/components/join_us/JoinUs";
 import lessonImage from "@/assets/img/Frame 427319274.png";
 import { SlArrowDown, SlArrowUp } from "react-icons/sl";
 
