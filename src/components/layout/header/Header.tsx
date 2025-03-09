@@ -21,6 +21,7 @@ const Header: FC = () => {
   if (pathname.startsWith("/auth")) return null;
   if (pathname.startsWith("/profil")) return null;
   if (pathname.startsWith("/marketing")) return null;
+  if (pathname.startsWith("/paid_marketing")) return null;
 
   return (
     <header id={s.header}>
