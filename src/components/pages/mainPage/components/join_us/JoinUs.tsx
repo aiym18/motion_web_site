@@ -1,7 +1,10 @@
+"use client";
 import React from "react";
 import s from "./JoinUs.module.scss";
+import { useRouter } from "next/navigation";
 
 const JoinUs = () => {
+  const router = useRouter();
   return (
     <section id={s.join}>
       <div className="container">
@@ -13,7 +16,9 @@ const JoinUs = () => {
           </p>
           <div className={s.form}>
             <input type="text" placeholder="Твой Email" />
-            <button>Подписка</button>
+            <button onClick={() => router.push("/paid_marketing")}>
+              Подписка
+            </button>
           </div>
         </div>
       </div>

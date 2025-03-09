@@ -1,3 +1,4 @@
+"use client";
 import React, { FC, useState } from "react";
 import s from "./DropDown.module.scss";
 import { IoIosArrowDown } from "react-icons/io";
