@@ -77,6 +77,9 @@
       }
     }
   }
+  .lessons {
+    padding: 100px 0;
+  }
 }
 
 @media (max-width: 1340px) {
@@ -140,6 +143,9 @@
           line-height: 30px;
         }
       }
+    }
+    .lessons {
+      padding: 30px 0;
     }
   }
 }
@@ -221,6 +227,9 @@
           line-height: 12px;
         }
       }
+    }
+    .lessons {
+      padding: 15px 0 30px 0;
     }
   }
 }
