@@ -27,8 +27,8 @@
     }
     .rotate {
       transform: rotate(180deg);
-      background-color: #007bff; // Синий фон для стрелки
-      color: white; // Белая иконка на синем фоне
+      background-color: #007bff;
+      color: white;
     }
   }
 
@@ -40,13 +40,13 @@
   }
 
   .active {
-    background-color: #007bff; // Светло-синий фон
+    background-color: #007bff;
   }
 
   .rotate {
     transform: rotate(180deg);
-    background-color: #007bff; // Синий фон для стрелки
-    color: white; // Белая иконка на синем фоне
+    background-color: #007bff;
+    color: white;
   }
 
   @keyframes fadeIn {
