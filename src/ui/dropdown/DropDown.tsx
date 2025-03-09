@@ -9,7 +9,7 @@ interface DropDownProps {
 }
 
 const DropDown: FC<DropDownProps> = ({ lesson }) => {
-  const [isOpen, setIsOpen] = useState(false); // Состояние открытия
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div id={s.dropdown}>
