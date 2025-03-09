@@ -4,6 +4,9 @@ import s from "./Marketing.module.scss";
 import marketing from "@/assets/img/marketing1.jpeg";
 import Image from "next/image";
 import JoinUs from "../mainPage/components/join_us/JoinUs";
+import DropDown from "@/ui/dropdown/DropDown";
+import lessons from "@/constants/dropdown-data/data";
+
 const Marketing: FC = () => {
   return (
     <section id={s.marketing}>
@@ -57,6 +60,11 @@ const Marketing: FC = () => {
               финансовые рискив бизнесе и стратегии управления ими.
             </p>
           </div>
+        </div>
+        <div className={s.lessons}>
+          {lessons.map((lesson) => (
+            <DropDown key={lesson.id} lesson={lesson} />
+          ))}
         </div>
       </div>
       <JoinUs />
