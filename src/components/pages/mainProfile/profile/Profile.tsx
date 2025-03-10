@@ -14,7 +14,7 @@ const Profile: FC = () => {
             <Image className={scss.proimg}  src={chatimg} alt="img" />
             <div className={scss.user}>
               <div className={scss.usertex}>
-                <Image src={chatuser} alt="img" />
+                <Image className={scss.useimg}  src={chatuser} alt="img" />
                 <h2>
                   Саша Петрова <br />
                   <span>Студент</span>
