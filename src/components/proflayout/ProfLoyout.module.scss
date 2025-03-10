@@ -27,3 +27,12 @@
     -ms-overflow-style: none;
   }
 }
+
+@media (max-width: 750px) {
+  .ProfLoyoutSite {
+    .all{
+
+      flex-direction: row-reverse;
+    }
+  }
+}
