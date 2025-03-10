@@ -1,0 +1,101 @@
+.Profile {
+  padding: 60px 0 60px 60px;
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .userprofile {
+      border: 2px solid black;
+      border-radius: 15px;
+      height: 300px;
+      position: relative;
+      width: 100%;
+      .proimg {
+        width: 100%;
+      }
+      .user {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 50px;
+        bottom: 5px;
+        .usertex {
+          display: flex;
+          align-items: center;
+          gap: 50px;
+          h2 {
+            font-weight: 500;
+            font-size: 20px;
+            margin-bottom: -90px;
+            span {
+              font-weight: 300;
+              font-size: 14px;
+              line-height: 100%;
+            }
+          }
+        }
+        button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 159;
+          height: 46;
+          margin-bottom: -90px;
+          border-radius: 6px;
+          background: #23a6f0;
+          color: white;
+        }
+      }
+    }
+    .forcours {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding: 10px;
+      border: 2px solid black;
+      border-radius: 15px;
+      width: 100%;
+      .btn {
+        display: flex;
+        gap: 20px;
+        button {
+          border: 1px solid gray;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 159;
+          height: 46;
+          font-size: 17px;
+          color: black;
+        }
+        button:hover {
+          background: #23a6f0;
+          color: white;
+          border: none;
+        }
+      }
+      .topcours {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .Profile {
+    .content {
+      .forcours {
+        .topcours {
+          
+        }
+      }
+    }
+  }
+}
