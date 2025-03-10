@@ -1,14 +1,15 @@
 import { FC } from "react";
-import scss from "./Chat.module.scss";
+import s from "./Chat.module.scss";
+import ChatList from "./chatList/ChatList";
+import ChatPage from "./chatPage/ChatPage";
 
 const Chat: FC = () => {
- return (
-  <section className={scss.Chat}>
-   <div className="container">
-    <div className={scss.content}>Chat</div>
-   </div>
-  </section>
- );
+  return (
+    <section id={s.chat}>
+      <ChatList />
+      <ChatPage />
+    </section>
+  );
 };
 
 export default Chat;
