@@ -23,13 +23,31 @@
           color: #00000097;
         }
         a:hover {
-          color: #499BFC;
+          color: #499bfc;
         }
       }
     }
-    
   }
 }
-@media (max-width: 750px){
-  
+@media (max-width: 750px) {
+  .NavProfile {
+    width: 60px;
+    border-left: 2px solid #000;
+    .content {
+      .nav {
+        span {
+          a {
+            display: none;
+          }
+        }
+      }
+      .help {
+        span {
+          a {
+            display: none;
+          }
+        }
+      }
+    }
+  }
 }

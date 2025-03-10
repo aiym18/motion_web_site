@@ -90,10 +90,74 @@
 
 @media (max-width: 750px) {
   .Profile {
+    padding: 10px;
+  }
+}
+@media (max-width: 650px) {
+  .Profile {
+    padding: 10px;
     .content {
+      .userprofile {
+        .user {
+          .usertex {
+            display: flex;
+            gap: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .Profile {
+    padding: 10px;
+    .content {
+      .userprofile {
+        height: 130px;
+        .proimg {
+          height: 80px;
+        }
+        .user {
+          .usertex {
+            display: flex;
+            gap: 5px;
+            .useimg {
+              height: 60px;
+              width: 60px;
+            }
+            h2 {
+              font-weight: 500;
+              font-size: 10px;
+              margin-bottom: -20px;
+              span {
+                font-weight: 300;
+                font-size: 8px;
+                line-height: 100%;
+              }
+            }
+          }
+          button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100;
+            height: 34;
+            font-size: 10px;
+            margin-bottom: -20px;
+            border-radius: 6px;
+            background: #23a6f0;
+            color: white;
+          }
+        }
+      }
       .forcours {
-        .topcours {
-          
+        .btn {
+          button {
+            width: 160;
+            height: 34;
+            font-size: 13px;
+          }
         }
       }
     }
