@@ -6,8 +6,12 @@ import ChatPage from "./chatPage/ChatPage";
 const Chat: FC = () => {
   return (
     <section id={s.chat}>
-      <ChatList />
-      <ChatPage />
+      <div className={s.list}>
+        <ChatList />
+      </div>
+      <div className={s.page}>
+        <ChatPage />
+      </div>
     </section>
   );
 };

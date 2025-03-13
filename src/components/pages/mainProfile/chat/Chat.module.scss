@@ -1,3 +1,26 @@
 #chat {
   display: flex;
+  position: relative;
+  .list {
+    height: 700px;
+    position: fixed;
+    border-bottom: 2px solid grey;
+    width: 500px;
+    overflow-y: auto;
+    border-right: 1px solid #00000040;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .page {
+    position: fixed;
+    left: 41%;
+    width: 60%;
+    height: 700px;
+    border-bottom: 2px solid grey;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
 }
