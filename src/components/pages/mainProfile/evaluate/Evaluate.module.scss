@@ -1,0 +1,117 @@
+.Evaluate {
+  padding: 60px 0;
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .topevaluate {
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 600px;
+      height: 400px;
+      border: 2px solid gray;
+      gap: 20px;
+      position: relative;
+      span {
+        font-size: 30px;
+        position: absolute;
+        right: 5px;
+      }
+      h3 {
+        font-size: 32px;
+        margin-top: 40px;
+      }
+      .star {
+        display: flex;
+        font-size: 78px;
+        gap: 20px;
+      }
+      input {
+        width: 450px;
+        height: 80px;
+        padding: 0 10px;
+      }
+      button {
+        width: 450px;
+        height: 50px;
+        font-size: 20px;
+        background: #23a6f0;
+        color: white;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .Evaluate {
+    .content {
+      .topevaluate {
+        width: 400px;
+        height: 370px;
+        span {
+          font-size: 20px;
+        }
+        h3 {
+          font-size: 25px;
+          margin-top: 20px;
+        }
+        .star {
+          display: flex;
+          font-size: 48px;
+          gap: 10px;
+        }
+        input {
+          width: 250px;
+          height: 60px;
+          padding: 0 10px;
+        }
+        button {
+          width: 250px;
+          height: 50px;
+          font-size: 20px;
+          background: #23a6f0;
+          color: white;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 400px){
+    .Evaluate {
+        .content {
+          .topevaluate {
+            width: 380px;
+            height: 280px;
+            span {
+              font-size: 28px;
+            }
+            h3 {
+              font-size: 20px;
+              margin-top: 13px;
+            }
+            .star {
+              display: flex;
+              font-size: 28px;
+              gap: 10px;
+            }
+            input {
+              width: 200px;
+              height: 50px;
+              padding: 0 10px;
+            }
+            button {
+              width: 200px;
+              height: 50px;
+              font-size: 18px;
+              background: #23a6f0;
+              color: white;
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+}

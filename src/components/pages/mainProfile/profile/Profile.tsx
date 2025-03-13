@@ -8,7 +8,7 @@ import Card from "@/ui/card/Card";
 const Profile: FC = () => {
   return (
     <section className={scss.Profile}>
-      <div className="">
+      <div className="ontainer">
         <div className={scss.content}>
           <div className={scss.userprofile}>
             <Image className={scss.proimg}  src={chatimg} alt="img" />
