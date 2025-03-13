@@ -1,0 +1,28 @@
+.messageContainer {
+  flex-direction: column;
+  display: inline-flex;
+  gap: 10px;
+  padding-left: 20px;
+  .bubble {
+    padding: 25px 69px;
+    position: relative;
+    background: #363636;
+    display: inline;
+    font-weight: 400;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px 10px 10px 0;
+    .tail {
+      position: absolute;
+      width: 30px;
+      height: 25px;
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      background: #363636;
+      bottom: 0;
+      left: -10px;
+    }
+  }
+  span {
+    color: #00000073;
+  }
+}
