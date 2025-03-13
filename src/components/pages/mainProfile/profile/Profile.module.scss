@@ -111,10 +111,11 @@
 
 @media (max-width: 550px) {
   .Profile {
-    padding: 10px;
+    padding: 5px;
     .content {
       .userprofile {
         height: 130px;
+        width: 320px;
         .proimg {
           height: 80px;
         }
@@ -152,12 +153,14 @@
         }
       }
       .forcours {
+        width: 320px;
         .btn {
           button {
             width: 160;
             height: 34;
             font-size: 13px;
           }
+        }
       }
     }
   }

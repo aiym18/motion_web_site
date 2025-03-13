@@ -28,11 +28,11 @@
   }
 }
 
-@media (max-width: 750px) {
-  .ProfLoyoutSite {
-    .all{
 
-      flex-direction: row-reverse;
+@media (max-width: 550px){
+  .ProfLoyoutSite {
+    main {
+      padding-left: 50px;
     }
   }
 }
